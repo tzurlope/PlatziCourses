@@ -1,4 +1,8 @@
-
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
 
 html {
     background-color: rgb(0, 0, 0);
@@ -8,14 +12,14 @@ html {
     display: inline-flex;
     justify-content: end;
     vertical-align: middle;
-    padding-left: 50px;
-    padding-right: 50px;
+    padding-left: 30px;
+    padding-right: 30px;
 }
 
 .main-nav__item a:hover {
     border-color: white;
     border: 2px;
-    color: rgb(255, 217, 0);
+    color: rgb(118, 168, 255);
 }
 
 nav {
