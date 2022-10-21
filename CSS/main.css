@@ -2,7 +2,14 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    /* Used to reset the styling and be able to edit it without the browser styles */
 }
+
+html {
+    font-size: 62.5%; 
+    /* Used to have an scale with REM, 1rem=10px */
+}
+
 
 .main-nav__item {
     display: inline-block;
@@ -18,9 +25,9 @@
 .main-nav__item a {
     background-color: #13a4a4;
     color: white;
-    padding: 7px;
-    border-radius: 2px;
-    font-size: 20px;
+    padding: 0.7rem;
+    border-radius: 0.2rem;
+    font-size: 2rem;
     text-decoration: none;
     font-family: 'Silkscreen', cursive;
 }
