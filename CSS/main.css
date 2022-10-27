@@ -11,24 +11,26 @@ html {
 }
 
 .header {
-    height: 10vh;
+    height: 10rem;
     width: 100vw;
 }
 
 .header-logo, .nav, .nav-list, .main-nav__item {
     display: flex;
     margin: auto;
-    margin-top: 1rem;
 }
+
+.nav-list {
+    position: relative;
+    top: 2.5rem;
+}
+
 
 .nav {
     position: absolute;
     right: 0;
 }
 
-.nav-list {
-    height: 10vh;
-}
 
 .header-logo {
     position: relative;
@@ -36,17 +38,14 @@ html {
     display: none;
 }
 
-.sidebar, .main-content {
-    display: inline-block;
-}
-
-.main-content {
-    position: absolute;
+.main {
+    display: flex;
+    flex-direction: row;
 }
 
 .main-nav__item a {
     text-decoration: none;
-    font-size: 2.5vh;
+    font-size: 2.5rem;
     color: #0F044C;
     background-color: #EEEEEE;
     padding: 1rem;
