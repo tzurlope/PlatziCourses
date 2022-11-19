@@ -10,106 +10,48 @@ html {
     /* Used to have an scale with REM, 1rem=10px */
 }
 
-.header {
-    height: 10rem;
-    width: 100vw;
-}
-
-.header-logo, .nav, .nav-list, .main-nav__item {
+.container {
     display: flex;
-    margin: auto;
+    flex-wrap: wrap;
 }
 
-.nav-list {
-    position: relative;
-    top: 2.5rem;
-}
-
-
-.nav {
-    position: absolute;
-    right: 0;
-}
-
-
-.header-logo {
-    position: relative;
-    top: 1rem;
-    display: none;
-}
-
-.main {
-    display: flex;
-    flex-direction: row;
-}
-
-.main-nav__item a {
-    text-decoration: none;
-    font-size: 2.5rem;
-    color: #0F044C;
-    background-color: #EEEEEE;
-    padding: 1rem;
-    border-radius: 0.4rem;
-    margin-right: 2rem;
-    font-family: 'Courier New', Courier, monospace;
-}
-
-.main-nav__item a:hover {
-    background-color: #787A91;
-    color: #EEEEEE;
-    position: relative;
-    top: 1rem;
-}
-
-.header {
-    background-color: #0F044C;
-}
-
-.header-logo {
-    background-color: black;
-    width: 30%;
-    height: 5rem;
-}
-
-.sidebar {
-    height: 90vh;
-    width: 25vw;
-    min-width: 25rem;
-}
-
-.sidebar-item {
-    height: max-content;
-    width: 22.5vw;
-    background-color: #EEEEEE;
-    margin-right: 1rem;
+.c1, .c2, .c3, .c4, .c5 {
+    width: 100%;
+    min-width: 15rem;
+    height: 15rem;
     border-radius: 1rem;
-    margin: 1rem;
-    font-size: 3rem;
-    min-width: 20rem;
-    margin: auto;
-    margin-top: 2rem;
 }
 
-.sidebar-item p {
-    text-align: center;
-    padding: 3rem;
-    color: #141E61;
-    min-width: 16.5rem;
-    font-family: 'Courier New', Courier, monospace;
+.c3 {
+    margin-top: 5%;
 }
 
-main {
-    background-color: #787A91;
+.c4 {
+    height: auto;
+    margin-left: 5%;
+    margin-right: 5%;
 }
 
-.main-content {
-    background-color: #EEEEEE;
-    height: 90vh;
-    width: 75vw;
-    padding: 4rem;
-    max-width: 79vw;
+.c1, .c5 {
+    margin: 5%;
 }
 
-.main-content__text {
-    font-size: 2rem;
+.c1, .c2, .c3, .c5 {
+border: #153462 solid;
+}
+
+.c1 {
+    background-color: #153462;
+}
+
+.c2 {
+    background-color: #F6F6C9;
+}
+
+.c3 {
+    background-color: #BAD1C2;
+}
+
+.c5 {
+    background-color: #4FA095;
 }
