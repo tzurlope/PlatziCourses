@@ -1,0 +1,32 @@
+.c1, .c4, .c5 {
+    display: inline-block;
+    margin: 0;
+    margin-top: 7.5%;
+}
+
+.c2, .c3 {
+    height: 39.2vh;
+}
+
+.c5 {
+    order: 1;
+    margin-left: 5%;
+    width: 35%;
+    height: 80vh;
+}
+
+.c4 {
+    order: 2;
+    margin-left: 2%;
+    margin-right: 2%;
+    width: 24.5%;
+    height: 80vh;
+}
+
+.c1 {
+    order: 3;
+    margin-right: 5%;
+    width: 24.5%;
+    height: 80vh;
+}
+

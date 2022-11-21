@@ -1,19 +1,21 @@
 .c1 {
     width: 20%;
     margin-right: 2.5%;
-    height: 40vh;
+    height: 60vh;
     min-width: 5rem;
 }
 
 .c4 {
     width: 65%;
     margin-top: 5%;
+    margin-bottom: 5%;
     margin-left: 2.5%;
-    height: 40vh;
+    height: 10%;
     min-width: 5rem;
 }
 
 .c5 {
     width: 90%;
     margin-top: 0;
+    position: relative;
 }
