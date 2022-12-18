@@ -448,7 +448,7 @@ main {
 .main-plans-container {
     width: 100%;
     min-width: 320px;
-    padding-bottom: 70px;
+    padding-bottom: 20px;
     text-align: center;
     background-color: var(--off-white);
 }
@@ -479,13 +479,122 @@ main {
 
 .plans-container--card {
     position: relative;
-    width: 70%;
-    min-width: 230px;
+    scroll-snap-align: center;
+    width: 65%;
+    min-width: 190px;
     max-width: 300px;
-    height: 250px;
-    margin: 50px auto 0;
+    height: auto;
+    margin: 20px 10px 0;
     padding: 0 15px;
     background-color: var(--just-white);
     border-radius: 15px;
     box-shadow: 0 4px 8px rgba(89, 73, 30, 0.16);
+    margin-bottom: 30px;
+}
+
+.recommended {
+    position: absolute;
+    width: 120px;
+    height: 31px;
+    left: calc(50% - 60px);
+    top: -15px;
+    background-color: var(--bitcoin-orange);
+    border-radius: 8px;
+    color: var(--just-white);
+    font-size: 1.2rem;
+    padding: 7px;
+    font-weight: bold;
+}
+
+.plan-card--title {
+    padding-top: 30px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: var(--black);
+}
+
+.plan-card--price {
+    padding: 5px 0;
+    font-size: 5.2rem;
+    font-weight: bold;
+    line-height: 6.3rem;
+    color: var(--black);
+}
+
+.plan-info-container .sign {
+    position: absolute;
+    top: 65px;
+    left: 50px;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.plan-card--saving {
+    font-size: 1.2rem;
+    color: var(--grey);
+}
+
+.plans-container--slider {
+    display: flex;
+    height: auto;
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+    padding: 0 40px;
+}
+
+.plan-card--cta {
+    width: 150px;
+    height: 48px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    background-color: var(--off-white);
+    border: var(--bitcoin-orange) solid 2px;
+    border-radius: 4px;
+    font-size: 1.4rem;
+    font-weight: bold;
+    line-height: 1.8rem;
+    font-family: 'DM Sans', sans-serif;
+}
+
+.plan-card--cta span {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-image: url(../assets/icons/orange-right-arrow.svg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    vertical-align: text-bottom;
+}
+
+footer {
+    display: flex;
+    width: 100%;
+    height: 150px;
+    background-color: var(--bitcoin-orange);
+}
+
+footer section {
+    display: flex;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .left ul {
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    font-weight: 500;
+    list-style: none;
+}
+
+.left li {
+    margin: 10px 0;
+}
+
+.left a {
+    text-decoration: none;
+    color: var(--just-white);
 }
