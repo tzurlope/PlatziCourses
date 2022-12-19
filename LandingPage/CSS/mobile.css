@@ -142,11 +142,10 @@ main {
 }
 
 .main-currency-table {
-    width: 70%;
+    width: 235px;
     min-width: 235px;
     max-width: 500px;
     height: 300px;
-    margin: 0 auto;
     font-family: "Inter", sans-serif;
 }
 
@@ -288,9 +287,8 @@ main {
 }
 
 .currency-table--date, .comissions-table--date {
-    margin-top: 25px;
     padding: 8px;
-    margin: 25px auto 0 auto;
+    margin: 25px auto;
     width: 173px;
     height: 31px;
     border-radius: 8px;
@@ -533,6 +531,17 @@ main {
 .plan-card--saving {
     font-size: 1.2rem;
     color: var(--grey);
+}
+
+.main-tables-container {
+    display: flex;
+    justify-content: stretch;
+    height: auto;
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+    padding: 0 40px;
+    margin: 0 auto;
 }
 
 .plans-container--slider {
