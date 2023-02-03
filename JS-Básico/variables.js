@@ -27,5 +27,3 @@ var persona = {
 }
 
 persona
-
-var
