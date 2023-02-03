@@ -26,4 +26,3 @@ var persona = {
     edad: 30
 }
 
-persona
