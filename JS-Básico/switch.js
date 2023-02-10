@@ -56,20 +56,3 @@ function resultado(jugador1, jugador2) {
 }
 
 resultado(jugador1,jugador2)
-
-
-
-
-
-
-
-
-    } else if (jugador1 === "Tijera" && jugador2 === "Papel") {
-        console.log("Gana " + nombre1 + " con " + jugador1) 
-    } else {
-        console.log("Por favor entre una elección válida")
-    }
-
-}
-
-resultado(jugador1,jugador2)
