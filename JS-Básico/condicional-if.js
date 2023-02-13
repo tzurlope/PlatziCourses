@@ -75,4 +75,3 @@ if (article == "computadora") {
   } else {
     return("Artículo no encontrado")
   }
-}
