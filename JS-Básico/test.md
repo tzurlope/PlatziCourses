@@ -118,8 +118,20 @@ itsMe("Tzuriel", "López", "Tzu")
 ### 1️⃣ Responde las siguientes preguntas en la sección de comentarios:
 
 - ¿Qué es un condicional?
+
+Forma en que ejecutamos un bloque de código u utro, dependiendo de una validación
+
 - ¿Qué tipos de condicionales existen en JavaScript y cuáles son sus diferencias?
+
+IF, IF...ELSE, SWITCH
+
+El condicional switch nos permite validar si una condición se cumple comparándolo en distintos casos. En cambio con IF o IF...ELSE se pueden variar las condiciones que se validan en el momenti que se valida
+
 - ¿Puedo combinar funciones y condicionales?
+
+Las funciones pueden guardar cualquier bloque de código, incluyendo condicionales
+
+El condicional switch nos permite validar si una condición se cumple comparándolo en distintos casos. En cambio con IF o IF...ELSE se pueden variar las condiciones que se validan en el momenti que se valida
 
 ### 2️⃣ Replica el comportamiento del siguiente código que usa la sentencia switch utilizando if, else y else if:
 
@@ -140,6 +152,27 @@ switch (tipoDeSuscripcion) {
        console.log("Tú y alguien más pueden tomar TODOS los cursos de Platzi durante un año");
        break;
 }
+```
+
+SOLUCIÓN
+
+```
+const tipodeSuscripcion = "Basic";
+
+function subscriptionType(tipodeSuscripcion) {
+    if(tipodeSuscripcion === "Free") {
+        console.log("Solo puedes tomar los cursos gratis")
+    } else if(tipodeSuscripcion === "Basic") {
+        console.log("Puedes tomar casi todos los cursos de Platzi durante un mes")
+    } else if(tipodeSuscripcion === "Expert") {
+        console.log("Puedes tomar casi todos los cursos de Platzi durante un año")
+    } else if(tipodeSuscripcion === "ExpertPlus") {
+        console.log("Tú y alguien más pueden tomar TODOS los cursos de Platzi durante un año")
+    } else {
+        console.log("No tienes subscripción válida")
+    }
+}
+
 ```
 
 ### 3️⃣ Replica el comportamiento de tu condicional anterior con if, else y else if, pero ahora solo con if (sin else ni else if).
