@@ -21,36 +21,78 @@ Recuerda que **el éxito no se mide por cuánto tiempo te toma aprender**, esa m
 ### 1️⃣ Responde las siguientes preguntas en la sección de comentarios:
 
 - ¿Qué es una variable y para qué sirve?
+
+Son espacios reservados en memoria para guardar información dependiendo de los tipos y estructuras de datos que soporte nuestro lenguaje
+
 - ¿Cuál es la diferencia entre declarar e inicializar una variable?
+
+Cuando se declara la variable se crea la variable, pero no se le asigna un valor. En cambio, inicializar es asignarle un valor a esa variable
+
+```
+//Declarar
+var nombre;
+
+//Inicializar
+var nombre = "Tzuriel";
+```
+
 - ¿Cuál es la diferencia entre sumar números y concatenar strings?
+
+Sumar números hace una operación matemática, en cambio sumar strings hace una concatenación
+
 - ¿Cuál operador me permite sumar o concatenar?
+
+Se usa el operador "+"
 
 ### 2️⃣ Determina el nombre y tipo de dato para almacenar en variables la siguiente información:
 
-- Nombre
-- Apellido
-- Nombre de usuario en Platzi
-- Edad
-- Correo electrónico
-- Mayor de edad
-- Dinero ahorrado
-- Deudas
+- Nombre: string
+- Apellido: string
+- Nombre de usuario en Platzi: string
+- Edad: number
+- Correo electrónico: string
+- Mayor de edad: boolean
+- Dinero ahorrado: number
+- Deudas: number
 
 ### 3️⃣ Traduce a código JavaScript las variables del ejemplo anterior y deja tu código en los comentarios.
+
+```
+var nombre = "Tzuriel";
+var apellido = "Lopez";
+var username = "tzurlope";
+var edad = 22;
+var correoElectrónico = "tzuriel.lm@hotmail.com";
+var mayordeEdad = true;
+var dineroAhorrado = 5000;
+var deudas = 1000;
+```
 
 ### 4️⃣ Calcula e imprime las siguientes variables a partir de las variables del ejemplo anterior:
 
 - Nombre completo (nombre y apellido)
 - Dinero real (dinero ahorrado menos deudas)
 
+```
+var nombreCompleto = `${nombre} ${apellido}`;
+var dineroReal = dineroAhorrado - deudas
+```
 
 ## Funciones
 
 ### 1️⃣ Responde las siguientes preguntas en la sección de comentarios:
 
 - ¿Qué es una función?
+
+Conjuntos de sentencias que podes utilizar para generar acciones con los valores que ya guardamos en las variables
+
 - ¿Cuándo me sirve usar una función en mi código?
+
+Cuando quiero dejar establecido un proceso que se debe llevar a cabo según mis parámetros
+
 - ¿Cuál es la diferencia entre parámetros y argumentos de una función?
+
+Los parámetros son los datos necesarios y que se deben proporcionar para llevar a cabo la función con éxito. Los argumentos son los pasos a seguir en la función.
 
 ### 2️⃣ Convierte el siguiente código en una función, pero, cambiando cuando sea necesario las variables constantes por parámetros y argumentos en una función:
 
@@ -63,6 +105,13 @@ const nickname = "juandc";
 console.log("Mi nombre es " + completeName + ", pero prefiero que me digas " + nickname + ".");
 ```
 
+```
+
+function itsMe(name, lastname, nickname) {
+    console.log(`Mi nombre es ${name} ${lastname}, pero prefiero que me digas ${nickname}`);
+}
+itsMe("Tzuriel", "López", "Tzu")
+```
 
 ## Condicionales
 
