@@ -185,9 +185,20 @@ function subscriptionType(tipodeSuscripcion) {
 ### 1️⃣ Responde las siguientes preguntas en la sección de comentarios:
 
 - ¿Qué es un ciclo?
+
+Es una forma de ejecutar un mismo bloque de código hasta que una condición se cumpla
+
 - ¿Qué tipos de ciclos existen en JavaScript?
+
+While, for, do while.
+
 - ¿Qué es un ciclo infinito y por qué es un problema?
+
+Cuando nuestra condicion o validación para terminar el ciclo nunca se cumple y el ciclo se repite infinitamente hasta generar un error
+
 - ¿Puedo mezclar ciclos y condicionales?
+
+Si, de porsi los ciclos incluyen condicionales. De todas formas se pueden ejecutar mas condicionales durante los ciclos o viceversa
 
 ### 2️⃣ Replica el comportamiento de los siguientes ciclos for utilizando ciclos while:
 
@@ -196,8 +207,22 @@ for (let i = 0; i < 5; i++) {
     console.log("El valor de i es: " + i);
 }
 
+let i = 0;
+
+while (i < 5) { 
+    console.log("El valor de i es: " + i);
+    i++;
+}
+
 for (let i = 10; i >= 2; i--) {
     console.log("El valor de i es: " + i);
+}
+
+let i = 10;
+
+while (i >= 2) {
+    console.log("El valor de i es: " + i);
+    i--;
 }
 ```
 
@@ -205,21 +230,82 @@ for (let i = 10; i >= 2; i--) {
 
 > 💡 Pista: puedes usar la función prompt de JavaScript.
 
+```
+while (respuesta != 4) {
+    let pregunta = prompt("¿Cuanto es 2 + 2?");
+    respuesta = pregunta;
+}
+
+console.log("Respuesta correcta")
+```
+
 
 ## Listas
 
 ### 1️⃣ Responde las siguientes preguntas en la sección de comentarios:
 
 - ¿Qué es un array?
+
+Es una lista de elementos. Un conjunto de elementos.
+
+```
+const array = [1, 'jajaja', true, false];
+```
+
 - ¿Qué es un objeto?
+
+Es una lista de elementos pero cada elemento tiene un nombre clave.
+
+```
+const obj = {
+    nombre: 'Tzuriel',
+    edad: 3,
+};
+```
+
 - ¿Cuándo es mejor usar objetos o arrays?
+
+Arrays cuando lo que haremos en un elemento es lo mismo que en todos los demás. Pero un objeto cuando los nombres de cada elemento son importantes para nuestro algoritmo
+
 - ¿Puedo mezclar arrays con objetos o incluso objetos con arrays?
+
+Si, los arrays pueden guardar objetos y los objetos puedes guardar arrays entre sus propiedades
 
 ### 2️⃣ Crea una función que pueda recibir cualquier array como parámetro e imprima su primer elemento.
 
+```
+var primerElemento = function(listArray) {
+    console.log(`Hola ${listArray[0]}`)
+}
+primerElemento(['Tzuriel', 'Khaled', 'Einar', 'Beatriz'])
+```
+
 ### 3️⃣ Crea una función que pueda recibir cualquier array como parámetro e imprima todos sus elementos uno por uno (no se vale imprimir el array completo).
 
+```
+var primerElemento = function(listArray) {
+    for (var listItem of listArray){
+        console.log(`Hola ${listItem}`)
+    }
+}
+primerElemento(['Tzuriel', 'Khaled', 'Einar', 'Beatriz'])
+```
+
 ### 4️⃣ Crea una función que pueda recibir cualquier objeto como parámetro e imprima todos sus elementos uno por uno (no se vale imprimir el objeto completo).
+
+```
+var objetoElementos = function(elementosDelObjeto) {
+    var elementos = Object.values(elementosDelObjeto);
+    for (var elemento of elementos){
+        console.log(`El valor de este elemento es ${elemento}`)
+    }
+}
+objetoElementos({
+    nombre: 'Tzuriel',
+    edad: 3,
+    comidaFavorita: 'Carne',
+})
+```
 
 
 ## ¿Cómo te fue? 🏆
