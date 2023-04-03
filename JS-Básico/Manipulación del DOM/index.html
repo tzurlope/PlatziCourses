@@ -9,14 +9,13 @@
 <body>
     <h1 class="titulo">Manipulación del DOM básica</h1>
 
-    <p>Esto es un párrafo</p>
+    <form id="form">
+        <input type="number" id="calculo1" placeholder="Escribe algo aquí">
+        <input type="number" id="calculo2" placeholder="Escribe algo aquí">
+        <button type="button" id="btnCalcular">Calcular</button>
 
-    <p class="parrafito">Esto es un párrafo con clase</p>
-
-    <p id="pid">Esto es un párrafo con ID</p>
-
-    <input placeholder="Escribe algo aquí">
-
+        <p id="result"></p>
+    </form>
 
 <!-- Dentro del mismo código se puede usar la label script para ejecutar código JS -->
     <script>
@@ -25,6 +24,6 @@
 
 <!-- O se puede crear un archivo separado e invocar el archivo JS desde la etiqueta script con el atributo src -->
 
-    <script src="./script.js"></script>
+    <script src="./eventsScript.js"></script>
 </body>
 </html>
